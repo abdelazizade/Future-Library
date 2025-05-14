@@ -1,0 +1,26 @@
+ <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3 [translate]="'footer.about'">About Us</h3>
+            <p [translate]="'footer.aboutText'">Library Store provides high-quality educational and office supplies at competitive prices.</p>
+          </div>
+          <div class="footer-section">
+            <h3 [translate]="'footer.quickLinks'">Quick Links</h3>
+            <ul>
+              <li><a routerLink="/" [translate]="'header.home'">Home</a></li>
+              <li><a routerLink="/school-supplies" [translate]="'header.schoolSupplies'">School Supplies</a></li>
+              <li><a routerLink="/contact" [translate]="'footer.contact'">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3 [translate]="'footer.contact'">Contact Us</h3>
+            <p>Email: infolibrarystore.com</p>
+            <p [translate]="'footer.phone'">Phone: +123 456 7890</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; {{ currentYear }} Library Store. <span [translate]="'footer.rights'">All rights reserved.</span></p>
+        </div>
+      </div>
+    </footer>

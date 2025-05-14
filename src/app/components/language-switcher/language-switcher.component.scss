@@ -1,0 +1,23 @@
+.language-switcher {
+      display: flex;
+      gap: 0.5rem;
+      
+      button {
+        background: rgba(255, 255, 255, 0.2);
+        border: none;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.3s;
+        
+        &:hover {
+          background: rgba(255, 255, 255, 0.3);
+        }
+        
+        &.active {
+          background: white;
+          color: #1976d2;
+        }
+      }
+    }

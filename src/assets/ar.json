@@ -1,0 +1,20 @@
+{
+  "header": {
+    "home": "الرئيسية",
+    "schoolSupplies": "ادوات مدرسية",
+    "calculator": "اله حاسبه",
+    "externalBooks": "كتب خارجية",
+    "officeSupplies": "تجهيزات مكاتب",
+    "engineeringArts": "هندسة وفنون",
+    "intelligenceGames": "اللعاب ذكاء"
+  },
+  "home": {
+    "heroTitle": "مرحبا بكم في متجر المكتبة",
+    "heroSubtitle": "وجهتك الوحيدة لجميع الاحتياجات التعليمية والمكتبية",
+    "featuredProducts": "منتجات مميزة",
+    "categories": "الفئات"
+  },
+  "product": {
+    "addToCart": "أضف إلى السلة"
+  }
+}

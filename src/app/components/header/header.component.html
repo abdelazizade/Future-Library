@@ -1,0 +1,20 @@
+
+ <header class="header">
+      <div class="container">
+        <div class="logo">
+          <a routerLink="/">Library Store</a>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a routerLink="/" routerLinkActive="active" [translate]="'header.home'">Home</a></li>
+            <li><a routerLink="/school-supplies" routerLinkActive="active" [translate]="'header.schoolSupplies'">School Supplies</a></li>
+            <li><a routerLink="/calculator" routerLinkActive="active" [translate]="'header.calculator'">Calculator</a></li>
+            <li><a routerLink="/external-books" routerLinkActive="active" [translate]="'header.externalBooks'">External Books</a></li>
+            <li><a routerLink="/office-supplies" routerLinkActive="active" [translate]="'header.officeSupplies'">Office Supplies</a></li>
+            <li><a routerLink="/engineering-arts" routerLinkActive="active" [translate]="'header.engineeringArts'">Engineering & Arts</a></li>
+            <li><a routerLink="/intelligence-games" routerLinkActive="active" [translate]="'header.intelligenceGames'">Intelligence Games</a></li>
+          </ul>
+        </nav>
+        <app-language-switcher></app-language-switcher>
+      </div>
+    </header>

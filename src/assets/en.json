@@ -1,0 +1,20 @@
+{
+  "header": {
+    "home": "Home",
+    "schoolSupplies": "School Supplies",
+    "calculator": "Calculator",
+    "externalBooks": "External Books",
+    "officeSupplies": "Office Supplies",
+    "engineeringArts": "Engineering & Arts",
+    "intelligenceGames": "Intelligence Games"
+  },
+  "home": {
+    "heroTitle": "Welcome to Library Store",
+    "heroSubtitle": "Your one-stop shop for all educational and office needs",
+    "featuredProducts": "Featured Products",
+    "categories": "Categories"
+  },
+  "product": {
+    "addToCart": "Add to Cart"
+  }
+}

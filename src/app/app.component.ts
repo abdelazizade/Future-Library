@@ -3,7 +3,6 @@ import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from './components/footer/footer.component';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
-import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -13,8 +12,5 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent {
   title = 'Liberary';
-
   currentDir: 'rtl' | 'ltr' = 'ltr';
-
-  
 }

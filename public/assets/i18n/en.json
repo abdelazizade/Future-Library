@@ -1,0 +1,41 @@
+{
+  "header": {
+    "logo": "Library Store",
+    "home": "Home",
+    "schoolSupplies": "School Supplies",
+    "calculator": "Calculators",
+    "externalBooks": "External Books",
+    "officeSupplies": "Office Supplies",
+    "engineeringArts": "Engineering & Arts",
+    "intelligenceGames": "Intelligence Games",
+    "about": "About"
+  },
+  "footer": {
+    "about": "About Us",
+    "aboutText": "Library Store provides high-quality educational and office supplies at competitive prices.",
+    "quickLinks": "Quick Links",
+    "categories": "Categories",
+    "contact": "Contact Us",
+    "phone": "Phone",
+    "rights": "All rights reserved."
+  },
+  "home": {
+    "heroTitle": "Welcome to Library Store",
+    "heroSubtitle": "Your one-stop shop for all educational and office needs",
+    "featuredProducts": "Featured Products",
+    "categories": "Categories",
+    "shopNow": "Shop Now"
+  },
+  "product": {
+    "addToCart": "Add to Cart"
+  },
+   "about": {
+    "title": "About Library Store",
+    "intro": "At Library Store, we believe that education and organization are the keys to success. That's why we offer a wide range of school, university, and office supplies designed to make learning and working easier, smarter, and more enjoyable.",
+    "missionTitle": "Our Mission",
+    "missionText": "To provide high-quality educational and office materials that support students, teachers, and professionals in achieving their goals.",
+    "visionTitle": "Our Vision",
+    "visionText": "To become the leading destination for educational and office supplies by combining quality, affordability, and exceptional customer service.",
+    "contactButton": "Get in Touch"
+  }
+}

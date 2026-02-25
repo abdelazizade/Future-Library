@@ -1,0 +1,34 @@
+@if (isLoading()) {
+  <div class="loading-container">
+    <div class="loading-spinner"></div>
+    <p>Loading product details...</p>
+  </div>
+} @else if (notFound() || !productDetails()) {
+  <div class="not-found-container">
+    <h2>Product Not Found</h2>
+    <p>The product you're looking for doesn't exist.</p>
+    <button class="back-button" (click)="router.navigate(['/home'])">Go Back Home</button>
+  </div>
+} @else {
+  <div class="product-card">
+    <div class="product-image">
+      <img [src]="productDetails().image" [alt]="productDetails().name" loading="lazy">
+    </div>
+
+    <div class="product-details">
+      <h3>{{ productDetails().name }}</h3>
+      <p class="description">{{ productDetails().description }}</p>
+
+      <div class="price-section">
+        <span class="price">${{ productDetails().price }}</span>
+        @if (productDetails().discount) {
+          <span class="discount">${{ productDetails().discount }}</span>
+        }
+      </div>
+
+      <button class="add-to-cart" (click)="buyOnWhatsApp()">
+        Buy through WhatsApp
+      </button>
+    </div>
+  </div>
+}

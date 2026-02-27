@@ -61,7 +61,7 @@ export class HomeComponent implements OnInit {
       alt: 'Special Offers'
     },
     {
-      image: 'https://samir-and-aly-stationaries.fra1.cdn.digitaloceanspaces.com/media/wysiwyg/slider/prkr_prss_m_imgpsh-Recovered-Recovered-AR.png',
+      image: 'https://samir-and-aly-stationaries.fra1.cdn.digitaloceanspaces.com/media/wysiwyg/slider/prkr_prss_m_imgpsh-Recovered-Recovered-AR.png ',
       title: 'Quality Products',
       alt: 'Quality Products'
     }
@@ -79,5 +79,6 @@ export class HomeComponent implements OnInit {
 
   subscribeNewsletter() {
     // Newsletter subscription logic
+    console.log(this.newsletterEmail);
   }
 }

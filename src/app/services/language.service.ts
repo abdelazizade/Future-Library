@@ -7,13 +7,13 @@ import { TranslateService } from '@ngx-translate/core';
 export class LanguageService {
 
   constructor(private translate: TranslateService) {
-    // this.translate.setDefaultLang('en');
-    // this.translate.use('en');
+    this.translate.setDefaultLang('en');
+    this.translate.use('en');
   }
 
   changeLanguage(lang: string) {
-    // this.translate.use(lang);
-    // document.documentElement.lang = lang;
-    // document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+    this.translate.use(lang);
+    document.documentElement.lang = lang;
+    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
   }
 }

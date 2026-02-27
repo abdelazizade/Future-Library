@@ -1,22 +1,90 @@
- <section class="hero">
-      <div class="hero-content">
-        <h1 [translate]="'home.heroTitle'">Welcome to Library Store</h1>
-        <p [translate]="'home.heroSubtitle'">Your one-stop shop for all educational and office needs</p>
-      </div>
-    </section>
+<!-- Carousel Slider Section -->
+<app-carousel [slides]="carouselSlides" [autoSlide]="true" [slideInterval]="2500"></app-carousel>
 
-    <section class="featured-products">
-      <h2 [translate]="'home.featuredProducts'">Featured Products</h2>
-      <div class="products-grid">
-        <app-product-card *ngFor="let product of featuredProducts" [product]="product"></app-product-card>
-      </div>
-    </section>
+<!-- Product Categories Section -->
+<section class="categories">
+  <div class="container">
+    <div class="section-header">
+      <h2 [translate]="'home.categories'">{{"home.categories" | translate}}</h2>
+      <p class="section-subtitle">Browse our wide range of products</p>
+    </div>
+    <div class="categories-grid">
+      <a *ngFor="let category of categories" [routerLink]="category.link" class="category-card">
+        <span class="category-icon">{{ category.icon }}</span>
+        <h3>{{ category.name }}</h3>
+      </a>
+    </div>
+  </div>
+</section>
 
-    <section class="categories">
-      <h2 [translate]="'home.categories'">Categories</h2>
-      <div class="categories-grid">
-        <a *ngFor="let category of categories" [routerLink]="category.link" class="category-card">
-          <h3>{{ category.name }}</h3>
-        </a>
+<!-- Special Offers Section -->
+<section class="special-offers" *ngIf="specialOffers.length > 0">
+  <div class="container">
+    <div class="section-header">
+      <h2>Special Offers</h2>
+      <p class="section-subtitle">Limited time deals you don't want to miss!</p>
+    </div>
+    <div class="products-grid">
+      <app-product-card *ngFor="let product of specialOffers" [product]="product" (cardClick)="productDetails($event)"></app-product-card>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Products Section -->
+<section class="featured-products">
+  <div class="container">
+    <div class="section-header">
+      <h2 [translate]="'home.featuredProducts'">{{"home.featuredProducts" | translate}}</h2>
+      <p class="section-subtitle">Our most popular products</p>
+    </div>
+    <div class="products-grid">
+      <app-product-card *ngFor="let product of featuredProducts" [product]="product" (cardClick)="productDetails($event)"></app-product-card>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <div class="container">
+    <div class="section-header">
+      <h2>What Our Customers Say</h2>
+      <p class="section-subtitle">Trusted by thousands of satisfied customers</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card" *ngFor="let testimonial of testimonials">
+        <div class="testimonial-content">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"{{ testimonial.text }}"</p>
+        </div>
+        <div class="testimonial-author">
+          <div class="author-avatar">{{ testimonial.name.charAt(0) }}</div>
+          <div class="author-info">
+            <h4>{{ testimonial.name }}</h4>
+            <p class="author-role">{{ testimonial.role }}</p>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
+<section class="newsletter">
+  <div class="container">
+    <div class="newsletter-content">
+      <div class="newsletter-text">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Get the latest updates, special offers, and exclusive deals delivered to your inbox!</p>
+      </div>
+      <form class="newsletter-form" (ngSubmit)="subscribeNewsletter()">
+        <input 
+          type="email" 
+          [(ngModel)]="newsletterEmail" 
+          name="email"
+          placeholder="Enter your email address"
+          class="newsletter-input"
+          required
+        />
+        <button type="submit" class="newsletter-button">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
